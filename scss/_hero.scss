@@ -1,0 +1,11 @@
+.hero {
+	display: flex;
+	align-items: center;
+	max-width: $container-width;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+.hero-image {
+	margin-left: 30px;
+}

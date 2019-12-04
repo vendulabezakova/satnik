@@ -1,0 +1,24 @@
+.grid {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+.grid__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid__col {
+	flex: 1;
+	margin: 0 $grid-col-margin;
+}
+
+.grid__col--one-third {
+	flex: 1 1 calc(100% / 3 - #{$grid-col-margin} * 2);
+	max-width: calc(100% / 3 - #{$grid-col-margin} * 2);
+}
+
+.grid__col--half {
+	flex: 1 1 calc(100% / 2 - #{$grid-col-margin} * 2);
+	max-width: calc(100% / 2 - #{$grid-col-margin} * 2);
+}
